@@ -16,12 +16,12 @@ function setup()
 
 function draw()
 {
-    background(120,45,78),
+    background(50,35,68),
     textSize(22)
     text("Good day!", 10,80)
 
 // head
-fill(255, 204, 0);
+fill(25, 204, 0);
 circle(headX, headY, 175);
 headX+=headDirection;
 if(headX >= 418 || headX <= 82)
@@ -45,7 +45,7 @@ ellipse(245,135,30,45)
 line(130,175,175,50);
 line(325,50,360,175);
 // body
-fill(10,24, 120);
+fill(10,24, 20);
 rect(200,bodyY,100,150);
 bodyY += bodyDirection;
 if(bodyY <= 0 || bodyY >= 450)
@@ -65,7 +65,7 @@ rect(200,335,10,50);
 // right leg
 rect(290,335,10,50);
 
-fill(120);
+fill(150);
 textSize(size);
 size+= sizeDirection;
 count++;
