@@ -25,15 +25,15 @@ var mouseShapeY;
 function setup() {
   createCanvas(500, 600);
   //gets a random speed when the it first start
-  for (var i=0; i < 50; i++) {
-  shapeXSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
-  shapeXSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
-  shapeXs[i] = getRandomNumber(500);
-  shapeYs[i] = getRandomNumber(600);
-  diameters[i] = getRandomNumber(30);
-  }
+  for (var i = 0; i < 50; i++) {
+    shapeXSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
+    shapeYSpeeds[i] = Math.floor(Math.random() * (Math.floor(Math.random() * 5)) + 1);
+    shapeXs[i] = getRandomNumber(500);
+    shapeYs[i] = getRandomNumber(600);
+    diameters[i] = getRandomNumber(30);
+   }
 
-createCharacter(200,350);
+    createCharacter(200,350);
 }
 
 function draw() {
@@ -49,40 +49,39 @@ function draw() {
   text("Goal", width-50,height-50)
 
   //createCharacter(200,350);
-  drawCharacter();
-  characterMovement();
+  drawcharacter();
+  characterMovment();
 
 
   //potential enemy
   fill(13,145,14);
   // draw the shape
   for (var i = 0; i < shapeXs.length; i++) {
-       circle(shapeXs[i], shapeYs[i], diameters[i]);
-         shapeXSpeeds[i] = Math.floor(Math.random()) * (Math.floor(Math.random() * 5)) + 1)
-         shapeXSpeeds[i] = Math.floor(Math.random()) * (Math.floor(Math.random() * 5)) + 1);
-  
+    circle(shapeXs[i], shapeYs[i], diameters[i]);
+shapeXSpeeds[i] = random(1,5);
+shapeYSpeeds[i] = random(1,5);
 
 
 
   // move the shape
   shapeXs[i] += shapeXSpeeds[i];
-  shapeYs[i] += shapeXSpeeds[i];
+  shapeYs[i] += shapeYSpeeds[i];
   // check to see if the shape has gone out of bounds
   if(shapeXs[i] > width) {
-    shapeXs[i] = 0;
+     shapeXs[i] = 0;
   }
-  if(shapeX < 0) {
-    shapeXs[i] = width;
+  if(shapeXs[i] < 0) {
+     shapeXs[i] = width;
   }
-  if(shapeY > height) {
-    shapeYs[i] = 0;
+  if(shapeYs[i] > height) {
+     shapeYs[i] = 0;
   }
-  if(shapeY < 0)  {
-    shapeYs[i] = height
+  if(shapeYs[i] < 0) {
+     shapeYs[i] = height
   }
 }
-  //check to see if the charater has left the exit
-  if(characterX > width && characterY > width-50) {
+    //check to see if the charater has left the exit
+  if(characterX > width && characterY > width - 50) {
     fill(0);
     stroke(5);
     textSize(26);
@@ -116,7 +115,7 @@ function createCharacter(x,y) {
   character = y;
 }
 
-function createCharacter() {
+function drawcharacter() {
     fill(23, 40,123);
     circle(characterX, characterY, 25)
 }
