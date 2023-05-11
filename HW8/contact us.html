@@ -1,0 +1,76 @@
+<html>
+    <title>Contact us page</title>
+
+    <Head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+        <script>
+            function checkboxes()
+            {
+                var firstName = document.getElementById("fName").value;
+                if(firstName =="")
+            {
+               document.getElementById("fName").style.backgroundColor = "red";
+               document.getElementById("fName").foucs();
+               document.getElementById("fName").innerHTML = "* Required";
+               document.getElementById("fNameMessage").style.color = "red";
+               {  
+                
+                var lastName = document.getElementById("lName").value;
+                if(lastName =="")
+        {
+               document.getElementById("lName").style.backgroundColor = "green";
+               document.getElementById("lName").foucs();
+               document.getElementById("lName").innerHTML = "* Required";
+               document.getElementById("lNameMessage").style.color = "green";
+        }
+            
+        }
+
+               return false;
+            }
+        }
+            </script>
+            <br>
+            <script>
+           function checkboxes()
+
+        {
+         var Email = document.getElementById("Email").value;
+        if(Email == "")
+        
+        {
+            window.alert("you need to put email in");
+        }
+        return false;
+
+    }
+            document.write("hi,there");
+        </script>
+        </Head>
+
+    </head>
+
+        <body style="background-color: rgb(78, 255, 173);">
+            <div style="margin-left: 35px;">
+                <h1>Contact Us</h1>
+                <p></p>
+                
+                    <p>First Name: <input type="text" id="fName">&nbsp;<span id="fNameMessage"></span></p>
+                    <p>Last Name: <input type="text" id="lName"></p><br>
+                     
+                     <br>
+                     Email: <input type="text" id="Email">&nbsp;<span id="EmailMessage"></span></p>
+                     <button id="btnSubmit" class="btn btn-primary" onclick='checkboxes();'>Submit My Info</button>
+                     <p>do you accept these term and agrement</p>
+                     <input type="radio" name="answer" value="Yes">Yes<br>
+                     <input type="radio" name="answer" value="No">No<br>
+                     <button id="my Submit" type="button">Submit</button>
+    </table>
+    
+
+</body>
+</html>
