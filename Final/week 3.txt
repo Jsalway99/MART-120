@@ -1,0 +1,80 @@
+<html>
+    <title>First Page</title>
+    <head>
+       
+        <!-- embedded styles-->
+        <style>
+            
+            /* all these styles are looking for basic HTML tags */
+            body{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            h1{
+                
+                color:blue;
+            }
+
+            h2{
+                color:coral;
+            }
+            ol{
+                list-style-type: square;
+            }
+        </style>
+
+    </head>
+    <!-- inline style here-->
+    <body style="background-color: cornflowerblue;">
+        <h1>This is my final.</h1>
+        <b>This is portfoilo </b><br>
+           <i> This the links to the projects that we worked on this semester</i><br>
+            <u>What we worked on this semester is that we made games and learn how to code them. We made websites and code them and made them how we want to make them </u>
+        <h2>These are the things i worked on the first half of the semester</h2>
+            <ol>
+                <li><a href="https://github.com/Jsalway99/MART-120/tree/main/Homework%201" target="_new">Week 1</a></li>
+                <img src="week2.jpg" alt="week2 design" title="week 2 assignment design" width="300" height="400">
+                <br>
+                <li><a href="https://github.com/Jsalway99/MART-120/tree/main/Homework%202" target="_new">week 2</a></li>
+                <li><a href="https://github.com/Jsalway99/MART-120/tree/main/Homework%203" target="_new">week 3</a></li>
+                <li><a href="https://github.com/Jsalway99/MART-120/tree/main/Homework%204" target="_new">week 4</a></li>
+                <li><a href="https://github.com/Jsalway99/MART-120/tree/main/Homework%206" target="_new">week 6</a></li>
+                <li><a href="https://github.com/Jsalway99/MART-120/tree/main/Homework%209" target="_new">week 9</a></li>
+            </ol>
+        <h2>Second half of the semseter</h2>
+            <ul>
+                <li><a href="https://github.com/Jsalway99/MART-120/tree/main/Homework%201" target="_new">Week 1
+                </a></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        <img src="./images/alice.jpeg" alt="This is our new puppy, Alice." title="This is our new puppy, Alice" 
+        width="300" height="400">
+
+        <p></p>
+        <select>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="MT">Montana</option>
+
+        </select>
+        <h3>What is your choice today?</h3>
+        <p></p>
+        <input type="radio" name="food" value="Eggs"> Eggs<br>
+        <input type="radio" name="food" value="Bacon"> Bacon<br>
+        <input type="radio" name="food" value="Toast"> Toast
+        <p></p>
+
+        <h3>What would you like for breakfast?</h3>
+        <p></p>
+        <input type="checkbox" name="Eggs" value="Eggs"> Eggs<br>
+        <input type="checkbox" name="Bacon" value="Bacon"> Bacon<br>
+        <input type="checkbox" name="Toast" value="Toast" checked> Toast<br>
+        <input type="checkbox" name="Bagel" value="Bagel"> Bagel
+       
+        <p><a href="page2.html" style="font-size:21px;">Short Story</a>
+        <!-- another inline style-->
+        &nbsp;|&nbsp;<a href="page3.html" style="font-size: 21px; color:lightslategrey;">Contact Us</a></p>
+        
+    </body>
+</html>
