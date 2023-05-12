@@ -6,7 +6,9 @@
 		background:url("Ac4.jpg");}
 		</style>
 	<title>My thrid page</title>
+	
 	</head>
+	
 	<body>
 	
 		<audio src="07 Emancipation.mp3" controls></audio>
@@ -14,6 +16,35 @@
 		<h1>my 3rd page</h1>
 		<a href="page 1.html">page 1</a>
 		<A href="Page 2.html">page 2</a>
+			<br>
+			<table>
+				<script> 
+					function checkboxes()
+					 {
+					var firstName = document.getElementById("fName").value;
+					if(firstName == "")
+					{
+					 document.getElementById("fName").style.backgroundColor = "red";
+					 document.getElementById("fName").focus();
+					}
+					var LastName = document.getElementById("LName").value;
+				}
+					</script>
+				<tr>
+					<td>First Name</td>
+					<td> <input type="text" id="txtFName"></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><input type="text" id="txtLName"></td>
+				
+				</tr>
+				<tr>
+					<td colspan="2"><button id="btnenter" onClick="getData();">enter</button></td>
+				</tr>
+			</table>
+			<div id="finaleResult"></div>
+
 		<h1>
 		<p> which console is your favorite?
 		<br>
@@ -33,5 +64,7 @@
 		</h2>
 		<button id="my summbit" type="button">Submit</button>
 		<h3>
-		<p> contact us:<a href="Email:Jsalway99@gmail.com"Send Email</a> jsalway99@gmail.com
+		<p> contact us:<a href="Email:Jsalway99@gmail.com"Send Email</a>jsalway99@gmail.com
+			<br>
+
 		</h3>
